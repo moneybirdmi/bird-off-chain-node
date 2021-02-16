@@ -39,7 +39,8 @@ const sendMethod = (privateKey, encodedABI) => {
 
 export const updateRequest = ({ id, valueRetrieved }) => {
   return new Promise((resolve, reject) => {
-    valueRetrieved = web3.utils.toWei(valueRetrieved);
+    //valueRetrieved = web3.utils.toWei(valueRetrieved);
+    valueRetrieved = web3.utils.toWei('3', 'ether');
     console.log('req id:', id, ' got value:', valueRetrieved);
     var privateKey;
     var encodedABI;
