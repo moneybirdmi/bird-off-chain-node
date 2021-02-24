@@ -17,7 +17,7 @@ const start = () => {
 
     console.log('new request', result.returnValues);
 
-    const requestedUrl = `https://bird.money/analytics/address/${result.returnValues.ethAddress}`;
+    const requestedUrl = `https://api.birdprotocol.com/analytics/address/${result.returnValues.ethAddress}`;
     let options = {
       uri: requestedUrl,
       json: true,
